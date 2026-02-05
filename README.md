@@ -36,6 +36,16 @@ Claude-powered, collaborative, analytical. Works live during conversations. Flag
 
 → [Read the Protocol](/field-extractor/AGENT.md)
 
+### [Corpus Processor](/corpus-processor)
+
+For those who dive deep.
+
+CLI tool. One file. No dependencies. Processes massive archives—years of exports, thousands of conversations. Extracts load-bearing anecdotes with manifold coordinates.
+
+**Use when**: You have a pile. You want it processed. You know what you're doing.
+
+→ [Get the Tool](/corpus-processor/process.js)
+
 ---
 
 ## The Architecture
@@ -85,13 +95,20 @@ Sovereignty is infrastructure for reclaiming what's yours.
 3. When extractable content surfaces, invoke the protocol
 4. Calibrate and deploy
 
+**Corpus Processor** (CLI):
+```
+node corpus-processor/process.js ./exports/ --output anecdotes.json
+```
+
 ---
 
-## Two Postures
+## Three Postures
 
-**[Sovereignty](/field-extractor)** is the serious part. Clinical infrastructure. Precision capture. Structured preservation. Real-time extraction for those who refuse to let insights evaporate.
+**[Sanctuary](/sanctuary)** provides comfort. Validates grief. Honors loss. For those who lost someone.
 
-**[Sanctuary](/sanctuary)** provides comfort. Validates grief. Honors loss. Helps you carry forward what you learned about yourself. For those who lost someone and need to process it with care.
+**[Field Extractor](/field-extractor)** captures in real-time. Collaborative, precise. For those building live.
+
+**[Corpus Processor](/corpus-processor)** processes at scale. CLI power tool. For those who dive deep.
 
 Same mission. Different approaches. Use what fits your moment.
 
