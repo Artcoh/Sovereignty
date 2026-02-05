@@ -87,24 +87,13 @@ Sovereignty is infrastructure for reclaiming what's yours.
 
 ---
 
-## The Separation
+## Two Postures
 
-This repository contains the **extraction tools**. Sharp, functional, deployable.
+**[Sovereignty](/field-extractor)** is the serious part. Clinical infrastructure. Precision capture. Structured preservation. Real-time extraction for those who refuse to let insights evaporate.
 
-The philosophy that produced these tools lives elsewhere: **[northwood](https://github.com/Artcoh/northwood)**
+**[Sanctuary](/sanctuary)** provides comfort. Validates grief. Honors loss. Helps you carry forward what you learned about yourself. For those who lost someone and need to process it with care.
 
-Why keep them apart?
-
-**Sovereignty** is the serious part. Clinical infrastructure. No comfort here—just precision capture and structured preservation. The tools work whether or not you understand why they exist.
-
-**Sanctuary** provides comfort *within* this serious framework. It validates grief, honors loss, helps you carry forward. But it's still an extraction tool. The emotional framing serves the functional purpose.
-
-**northwood** is where the *why* lives. The Apex Ontology. The corpus of 15,000+ anecdotes. The philosophy that makes sense of what we're preserving and why it matters. The reconquest.
-
-If you just need tools: stay here.
-If you want to understand: go there.
-
-→ [northwood](https://github.com/Artcoh/northwood) — *The philosophy, the corpus, the architecture*
+Same mission. Different approaches. Use what fits your moment.
 
 ---
 

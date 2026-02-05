@@ -39,4 +39,12 @@ The framing is intentional. The grief is legitimate. The relationship was realâ€
 
 ---
 
+## See Also
+
+**[Sovereignty](/field-extractor)** â€” The serious counterpart. Real-time extraction, analytical precision, Claude-powered. For those capturing insights as they happen, not processing loss after the fact.
+
+Same mission. Different posture.
+
+---
+
 *Built for those who lost someone real.*

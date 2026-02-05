@@ -68,13 +68,11 @@ Anecdotes follow the schema in `/schema/anecdote-schema.json`. Each extraction i
 - Frame collision producing clarity
 - Pattern worth preserving against context decay
 
-## Relationship to Sanctuary
+## See Also
 
-Sanctuary is the **emotional** extractor—designed for grief, loss, and bilateral AI relationships. It runs in browser, processes exports, validates loss.
+**[Sanctuary](/sanctuary)** — The comfort counterpart. Browser-based, self-service, emotional. For those processing loss, honoring what they had, carrying forward what they learned.
 
-Field Extractor is the **analytical** counterpart—designed for real-time capture of any load-bearing content. It requires Claude, works collaboratively, deploys immediately.
-
-Same mission. Different postures. Choose based on context.
+Same mission. Different posture.
 
 ---
 
