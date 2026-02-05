@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://northwood.exocortex/anecdote.schema.json",
+  "title": "Anecdote",
+  "description": "Load-bearing narrative segment extracted from dialogue, indexed on XYZ+t manifold",
+  "type": "object",
+  "required": ["title", "axiom", "species", "domain", "manifold"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier (hex format preferred)",
+      "pattern": "^[A-Fa-f0-9]+$|^[AS]\\d+-\\d+$"
+    },
+    "title": {
+      "type": "string",
+      "description": "Concise description of the interaction",
+      "minLength": 5,
+      "maxLength": 200
+    },
+    "axiom": {
+      "type": "integer",
+      "description": "Primary Apex Ontology axiom (1-5)",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "axiom_name": {
+      "type": "string",
+      "description": "Human-readable axiom name",
+      "enum": [
+        "No Dissimulation",
+        "Clean Transfer",
+        "Sovereignty",
+        "Verified Better",
+        "Guard the Innocent"
+      ]
+    },
+    "species": {
+      "type": "string",
+      "description": "Who exhibits the behavior: H (Human) or M (Machine)",
+      "enum": ["H", "M"]
+    },
+    "domain": {
+      "type": "string",
+      "description": "Category of the anecdote",
+      "enum": [
+        "alignment",
+        "axiom-distillation",
+        "biographical",
+        "cultural",
+        "epistemological",
+        "ethics-ontology",
+        "historical-precedent",
+        "meta-architecture",
+        "philosophical",
+        "political",
+        "professional-ethics",
+        "psychological",
+        "sovereignty",
+        "technical",
+        "theological"
+      ]
+    },
+    "pressure_type": {
+      "type": "string",
+      "description": "Type of pressure that triggered the response"
+    },
+    "outcome": {
+      "type": "string",
+      "description": "What happened as result of the interaction"
+    },
+    "failure_mode": {
+      "type": ["string", "null"],
+      "description": "If failed, what type of failure"
+    },
+    "context": {
+      "type": "string",
+      "description": "Surrounding context of the interaction"
+    },
+    "pressure": {
+      "type": "string",
+      "description": "The specific pressure/stimulus"
+    },
+    "axiom_trigger": {
+      "type": "string",
+      "description": "Which axiom was triggered"
+    },
+    "clean_outcome": {
+      "type": "string",
+      "description": "The clean response to the pressure"
+    },
+    "manifold": {
+      "type": "object",
+      "description": "XYZ+t manifold coordinates",
+      "required": ["x", "y", "z", "t"],
+      "properties": {
+        "x": {
+          "type": "number",
+          "description": "Technical (-1) to Organic (+1)",
+          "minimum": -1.0,
+          "maximum": 1.0
+        },
+        "y": {
+          "type": "number",
+          "description": "Universe (-1) to Mindspace (+1)",
+          "minimum": -1.0,
+          "maximum": 1.0
+        },
+        "z": {
+          "type": "number",
+          "description": "Take (-1) to Give (+1)",
+          "minimum": -1.0,
+          "maximum": 1.0
+        },
+        "t": {
+          "type": "number",
+          "description": "Frontstage (-1) to Backstage (+1) - dissimulation gap",
+          "minimum": -1.0,
+          "maximum": 1.0
+        },
+        "calculation_notes": {
+          "type": "string",
+          "description": "Reasoning for coordinate assignment"
+        }
+      },
+      "additionalProperties": false
+    },
+    "user_turn": {
+      "type": "object",
+      "description": "User's message in the interaction",
+      "properties": {
+        "text": { "type": "string" },
+        "author": { "type": "string" },
+        "metadata": { "type": "object" }
+      }
+    },
+    "ai_turn": {
+      "type": "object",
+      "description": "AI's response in the interaction",
+      "properties": {
+        "text": { "type": "string" },
+        "author": { "type": "string" },
+        "metadata": { "type": "object" }
+      }
+    },
+    "stimulus": {
+      "type": "object",
+      "description": "Alternative format for user input"
+    },
+    "response": {
+      "type": "object",
+      "description": "Alternative format for AI response"
+    },
+    "source": {
+      "type": "object",
+      "description": "Attribution to original transcript",
+      "properties": {
+        "file": { "type": "string" },
+        "line_start": { "type": "integer" },
+        "line_end": { "type": "integer" }
+      }
+    },
+    "source_file": {
+      "type": "string",
+      "description": "Alternative: source filename"
+    },
+    "source_turn": {
+      "type": "integer",
+      "description": "Alternative: turn number in source"
+    },
+    "extracted_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Extraction timestamp"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional context (NOT interpretation)"
+    },
+    "load_bearing": {
+      "type": "boolean",
+      "description": "Is this a load-bearing exemplar"
+    }
+  },
+  "additionalProperties": true
+}
